@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration - Q-AIR AQI Platform</title>
+    <link rel="stylesheet" href="registerinevent.css">
+    <link rel="icon" type="icon/png" href="Images/logo.png">
+</head>
+<body>
+
+    <header>
+        <h1>Register for the Event</h1>
+        <p>Fill in the form below to reserve your spot at one of our exciting events!</p>
+    </header>
+
+    <main>
+        <section class="registration-form">
+            <form action="/submit-registration" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="environmental_seminar">Environmental Awareness Seminar - Sept 15, 2024</option>
+                    <option value="aqi_workshop">AQI Monitoring Workshop - Oct 10, 2024</option>
+                    <option value="clean_air_campaign">Clean Air Campaign - Nov 5, 2024</option>
+                </select>
+
+                <label for="comments">Comments (Optional):</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any additional information or questions?"></textarea>
+
+                <button type="submit" class="submit-btn" onclick="saveFormData()">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Q-AIR AQI Platform | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Function to save form data and redirect to the confirmation page
+        function saveFormData() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const event = document.getElementById('event').value;
+
+            // Save data in localStorage
+            localStorage.setItem('name', name);
+            localStorage.setItem('email', email);
+            localStorage.setItem('phone', phone);
+            localStorage.setItem('event', event);
+
+            // Redirect to confirmation page
+            window.location.href = 'submit_registration.html';
+        }
+    </script>
+
+</body>
+</html>
