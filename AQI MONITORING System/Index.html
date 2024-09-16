@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Index.css">
+	<link rel="stylesheet" type="text/css" href="AMS1.css">
+	<link rel="icon" type="icon/png" href="Images/logo.png">
+	<title>Q-AIR : Real-time Air Quality Index</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+<section class="first">
+
+
+<!-- Navbar -->
+	<div class="container">
+		<header id="navbar">
+			<img alt="IQAir logo" class="mx-2 mb-5" height="50" src="Images/logo1.png" width="200"/>
+			<ul>
+				<li><a href="Index.html" class="active">Home</a></li>
+				<li><a href="NewsRoom.html" class="hover:underline capitalize">Newsroom</a></li>
+				<li><a href="events.html" class="hover:underline capitalize">Events</a></li>
+				<li><a href="AMS1.html" class="hover:underline capitalize">Check your AQI?</a></li>
+				<li><a href="about.html" class="hover:underline capitalize">About Us</a></li>
+				<li><a href="login.html" class="hover:underline capitalize">Login</a></li>			
+			</ul>
+			<img alt="Gov. Logo" class="mx-2 mb-5" height="50" src="Images/logo.png" width="200">
+			<span class="menuIcon" onclick="toggleMenu();"></span>
+		</header>
+
+
+		<div class="content">
+			<div class="bannerText" id="slideShowText">
+				<div class="active">
+					<h2>Air Quality Index</h2>
+					<p>The Air Quality Index (AQI) is used for reporting daily air quality. It tells you how clean or polluted your air is, and what associated health effects might be a concern for you. The AQI focuses on health effects you may experience within a few hours or days after breathing polluted air.</p> 
+					<a href="AMS1.html" class="readmore">Check AQI</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+								            <!-------------AIR PAGE------------------->
+
+<section class="second">
+	<div class="air">
+		<a name = "air" class="air"><h1>Air Quality Control</h1></a>
+		<p class="desca">The Air Quality Index (AQI) is used for reporting daily air quality. It tells you how clean or polluted your air is, and what associated health effects might be a concern for you. The AQI focuses on health effects you may experience within a few hours or days after breathing polluted air.</p>
+		<div class="totalair">
+			<div class="prosair">
+				<h3>Ideal Values</h3>
+				<li>Carbon Monoxide (CO):Ideal Range: Typically < 10 ppm </li>
+				<br>
+				<li> Nitrogen Monoxide (NO):- Ideal Range: Nitrogen monoxide (NO) is generally present at very low concentrations .</li>
+				<br>
+				<li>Nitrogen Dioxide (NO2):- Ideal Range: nitrogen dioxide (NO2) is often0.05 ppm </li>
+				<br>
+				<li>Ozone (O3):- ideal0.07 ppm </li>
+				<br>
+				<li>Sulfur Dioxide (SO2):- Ideal Range: < 0.05 ppm</li>
+			</div>
+
+			<div class="prosair">
+				<h3>Preventions</h3>
+				<p>The less gasoline we burn, the better we are doing to reduce air pollution and harmful effects of climate change. Make good choices about transportation. When you can, walk, ride a bike, or take public transportation. For driving, choose a car that gets better miles per gallon of gas, or choose an electric car. You can also investigate your power provider options—you may be able to request that your electricity be supplied by wind or solar. Buying your food locally cuts down on the fossil fuels burned in trucking or flying food in from across the country.</p>
+			</div>
+
+			<div class="prosair">
+				<h3>Facts</h3>
+				<p>The Air Quality Index (AQI) is used for reporting daily air quality. It tells you how clean or polluted your air is, and what associated health effects might be a concern for you. The AQI focuses on health effects you may experience within a few hours or days after breathing polluted air.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<footer>
+        <p>&copy; 2024 Q-AIR AQI Platform | All Rights Reserved</p>
+    </footer>
+
+
+	<script src="./script.js" defer></script>
+
+</body>
+</html>
